@@ -20,7 +20,7 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///quizzes.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
-app.config["CELERY_BROKER_URL"] = 'redis://localhost:6379'
+app.config["broker_url"] = 'amqps://puavmzjw:Ehmm76DvNOQy1-nQqyOtv6ErMCeOQDIw@chimpanzee.rmq.cloudamqp.com/puavmzjw'
 app.config["result_backend"] = "db+sqlite:///ryan.sqlite3"
 app.config["worker_concurrency"] = 1
 
