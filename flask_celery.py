@@ -4,7 +4,7 @@ def make_celery(app):
     celery = Celery(
         app.import_name,
         backend=app.config['result_backend'],
-        broker=app.config['CELERY_BROKER_URL']
+        broker=app.config['broker_url']
     )
     celery.conf.update(app.config)
 
