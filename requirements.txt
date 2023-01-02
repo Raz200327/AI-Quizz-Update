@@ -1,4 +1,5 @@
 amqp==5.1.1
+redis==6.2.6
 billiard==3.6.4.0
 celery==5.2.7
 certifi==2022.12.7
